@@ -1,0 +1,99 @@
+:root {
+  --bg: #f4f7fb;
+  --card: #fff;
+  --text: #1d2433;
+  --muted: #5f6b85;
+  --primary: #2a5cff;
+  --accent: #e6ecff;
+  --border: #d7dfef;
+}
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+header {
+  background: linear-gradient(90deg, #1f3e99, #2a5cff);
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+main { padding: 1rem; display: grid; gap: 1rem; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(33, 61, 122, 0.06);
+}
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem;
+}
+.actions { margin-top: 0.8rem; display: flex; gap: 0.5rem; }
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.55rem 0.85rem;
+  cursor: pointer;
+}
+button.secondary { background: #607298; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.45rem;
+  text-align: left;
+}
+th { background: var(--accent); }
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.8rem;
+}
+.metric {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+.metric p { margin: 0.2rem 0; color: var(--muted); }
+.metric strong { font-size: 1.2rem; }
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.8rem;
+}
+.market-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem;
+}
+.pipeline { font-weight: 600; color: #1f3e99; }
+.bar {
+  background: #eaf0ff;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.25rem 0 0.5rem;
+}
+.fill {
+  background: #2a5cff;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+}
+small { color: var(--muted); }
+pre {
+  white-space: pre-wrap;
+  background: #f9fbff;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}

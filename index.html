@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BD_Pipeline_K</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>BD_Pipeline_K</h1>
+      <p>Business development y sales follow-up con targets, market penetration y valor comercial.</p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Formulario de aplicación – Pipeline_Data</h2>
+        <p>Pega datos en formato CSV o TSV. Se guardará también en <strong>Source_Raw</strong> para trazabilidad.</p>
+        <textarea id="rawInput" rows="10" placeholder="Market,Client,Raw Status,Agreement Status,DD Status,Integration Status,Go Live Flag,Pipeline Value (€),Created Date,Last Update,Brands / Commercials,Entity & Company Info,URL,Jira,DD TKT,Integration TKT,Integration Email,Next Action"></textarea>
+        <div class="actions">
+          <button id="loadBtn">Cargar texto en Pipeline_Data</button>
+          <button id="sampleBtn" class="secondary">Cargar ejemplo</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Pipeline</h2>
+        <p class="pipeline">New Business → Legal → DD → Integration → Go Live → Live / Growth</p>
+        <div id="measurementBlocks" class="grid-3"></div>
+      </section>
+
+      <section class="card">
+        <h2>Dashboard_Summary</h2>
+        <table id="summaryTable"></table>
+      </section>
+
+      <section class="card">
+        <h2>Dashboard_By_Market</h2>
+        <div id="marketCards" class="market-grid"></div>
+      </section>
+
+      <section class="card">
+        <h2>Market_KPI_Input (manual)</h2>
+        <table id="kpiInputTable"></table>
+      </section>
+
+      <section class="card">
+        <h2>Market Sheets</h2>
+        <select id="marketSelector"></select>
+        <div id="marketDetail"></div>
+      </section>
+
+      <section class="card">
+        <h2>Pipeline_Data</h2>
+        <table id="pipelineTable"></table>
+      </section>
+
+      <section class="card">
+        <h2>KPI_Catalog</h2>
+        <ul id="kpiCatalog"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Dashboard_Template</h2>
+        <p>Resumen ejecutivo estándar por mercado:</p>
+        <ul>
+          <li>Commercial Execution: New Business, Legal, DD, Integration, Go Live</li>
+          <li>Market Performance: Market Penetration %, New Sales, New Go Lives, Revenue Added, Growth vs prior quarter</li>
+          <li>Strategic Contribution: Existing Client Expansion, Relationship Development, Collections Support, Strategic Projects Opened</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Source_Raw</h2>
+        <pre id="sourceRaw"></pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
