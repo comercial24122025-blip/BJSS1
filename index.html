@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Blackjack Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="top-bar">
+        <div class="brand-block">
+          <p class="eyebrow">High Limit Room</p>
+          <h1>Royal Dragon Blackjack</h1>
+        </div>
+        <div class="status-pill">Table Min $25 · Max $5,000</div>
+      </header>
+
+      <main class="table-stage">
+        <section class="blackjack-table" aria-label="Blackjack table layout">
+          <div class="dealer-zone">
+            <h2>Dealer</h2>
+            <div class="card-fan dealer-cards">
+              <article class="card dragon-back" aria-label="Dealer card face down"></article>
+              <article class="card face-up" aria-label="Ace of spades">
+                <span class="rank">A</span>
+                <span class="suit">♠</span>
+              </article>
+            </div>
+            <p class="hand-value">Soft 17</p>
+          </div>
+
+          <div class="player-arc" aria-label="Three player seats">
+            <article class="player-seat seat-left">
+              <h3>Seat 1</h3>
+              <div class="card-zone">
+                <article class="card face-up"><span class="rank">9</span><span class="suit red">♥</span></article>
+                <article class="card face-up"><span class="rank">8</span><span class="suit">♣</span></article>
+              </div>
+              <div class="seat-meta">
+                <p>Bet: <strong>$125</strong></p>
+                <p>Side Bet: Lucky 7s</p>
+              </div>
+            </article>
+
+            <article class="player-seat seat-center is-active">
+              <h3>Seat 2 · You</h3>
+              <div class="card-zone">
+                <article class="card face-up"><span class="rank">Q</span><span class="suit red">♦</span></article>
+                <article class="card dragon-back"></article>
+              </div>
+              <div class="seat-meta">
+                <p>Bet: <strong>$250</strong></p>
+                <p>Side Bet: Dragon Pair</p>
+              </div>
+            </article>
+
+            <article class="player-seat seat-right">
+              <h3>Seat 3</h3>
+              <div class="card-zone">
+                <article class="card face-up"><span class="rank">10</span><span class="suit">♠</span></article>
+                <article class="card face-up"><span class="rank">10</span><span class="suit red">♦</span></article>
+              </div>
+              <div class="seat-meta">
+                <p>Bet: <strong>$75</strong></p>
+                <p>Side Bet: 21+3</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="control-panel" aria-label="Game controls">
+          <section class="panel-card">
+            <h2>Betting Options</h2>
+            <div class="chip-row" role="list" aria-label="Select betting chips">
+              <button class="chip" data-value="25">$25</button>
+              <button class="chip" data-value="50">$50</button>
+              <button class="chip" data-value="100">$100</button>
+              <button class="chip" data-value="250">$250</button>
+              <button class="chip" data-value="500">$500</button>
+            </div>
+            <p class="chip-summary">Selected Bet: <strong id="betDisplay">$250</strong></p>
+          </section>
+
+          <section class="panel-card">
+            <h2>Actions</h2>
+            <div class="action-grid">
+              <button class="action-btn primary">Hit</button>
+              <button class="action-btn">Stand</button>
+              <button class="action-btn">Double</button>
+              <button class="action-btn">Split</button>
+            </div>
+            <div class="side-bets">
+              <button class="tag">Perfect Pairs</button>
+              <button class="tag">21+3</button>
+              <button class="tag">Lucky Ladies</button>
+            </div>
+          </section>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
