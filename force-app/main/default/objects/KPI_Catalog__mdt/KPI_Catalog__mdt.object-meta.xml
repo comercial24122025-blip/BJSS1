@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Catálogo de KPIs con definición formal y frecuencia.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <label>KPI Catalog</label>
+    <nameField>
+        <label>KPI Catalog Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>KPI Catalogs</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

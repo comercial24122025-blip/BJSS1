@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Account_Pipeline_Management</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Pipeline_Deal__c</members>
+        <members>KPI_Target__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>KPI_Catalog.KPI_Block__c</members>
+        <members>KPI_Catalog.KPI_Name__c</members>
+        <members>KPI_Catalog.Definition_Formula__c</members>
+        <members>KPI_Catalog.Stage__c</members>
+        <members>KPI_Catalog.Frequency__c</members>
+        <members>KPI_Catalog.Notes__c</members>
+        <name>CustomField</name>
+    </types>
+    <version>61.0</version>
+</Package>

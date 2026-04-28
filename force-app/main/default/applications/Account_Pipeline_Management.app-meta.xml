@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>App para manejo y seguimiento de cuentas nuevas y existentes.</description>
+    <label>Account Pipeline Management</label>
+    <tabs>Pipeline_Deal__c</tabs>
+    <tabs>KPI_Target__c</tabs>
+    <tabs>standard-Report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+</CustomApplication>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Gestión integral del pipeline: New Business, Legal, DD, Integration y Go Live.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <label>Pipeline Deal</label>
+    <nameField>
+        <displayFormat>PD-{00000}</displayFormat>
+        <label>Pipeline Deal Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Pipeline Deals</pluralLabel>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>
